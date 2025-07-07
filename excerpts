@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Excerpts - Jordana Fay</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About the Author</a>
+    <a href="books.html">Books</a>
+  </nav>
+  <main>
+    <h1>Excerpts</h1>
+    <p>Stay tuned for sample passages from Jordana Fay's books!</p>
+    <!-- Add actual excerpts here as your books are published -->
+  </main>
+</body>
+</html>
