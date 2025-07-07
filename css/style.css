@@ -2,7 +2,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: 
+    linear-gradient(120deg, #06b6d4 30%, #ff6f61 70%, transparent),
+    linear-gradient(60deg, #c0c0c0 20%, #ffffff 60%, #111111 100%),
+    repeating-radial-gradient(circle at 30% 70%, #fff 0px, #fff 9px, transparent 10px, transparent 20px),
+    linear-gradient(90deg, #06b6d4 0%, #111111 100%);
+  background-blend-mode: lighten, lighten, multiply, screen;
+}
   color: #222;
 }
 
