@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jordana Fay - Book Girls</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordana Faye - Book Girls</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for the page */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light grey background */
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center content horizontally */
+            min-height: 100vh; /* Ensure it takes full viewport height */
+            margin: 0;
+            padding: 20px; /* Add some padding around the content */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+    </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About the Author</a>
-    <a href="books.html">Books</a>
-  </nav>
-  <header>
-    <h1>Welcome to Jordana Fay's Book Girls</h1>
-    <p>Discover stories, adventures, and more!</p>
-  </header>
-  <main>
-    <section>
-      <h2>Featured Books</h2>
-      <ul>
-        <li>
-          <strong>First Bite</strong> - Learning about a world Autumn only dreamed existed as she is thrust into the middle of a familial fight between good and evil.
-        </li>
-        <li>
-          <strong>Troublemaking Witch</strong> - A girl who always has be be in charge will discover there is even more to who is then she ever thought possible.
-        </li>
-        <li>
-          <strong>Crimson Pattern</strong> - In a world where serial killers are mostly male, a woman with rules and time on her hands might just become legendary... if she isn't caught first.
-        </li>
-        <li>
-          <strong>Sovereign Storm</strong> - A woman with the power of mythological gods, and an unknown history. With her best friend by her side, she can't help but succeed.
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>
-        Please contact me for more:<br>
-        <a href="https://www.facebook.com/jordanafayebookgirl/" target="_blank">Facebook</a> | 
-        <a href="https://formspree.io/f/mldnyrvj" target="_blank">Contact Form</a>
-      </p>
-    </section>
-  </footer>
+    <!-- Navigation Bar -->
+    <nav class="w-full max-w-4xl bg-white p-4 rounded-xl shadow-md mb-8 flex flex-wrap justify-center gap-4">
+        <a href="index.html" class="text-purple-700 font-bold px-4 py-2 rounded-lg bg-purple-50 hover:bg-purple-100 transition duration-300">Home</a>
+        <a href="about.html" class="text-gray-700 hover:text-purple-700 font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition duration-300">About the Author</a>
+        <a href="books.html" class="text-gray-700 hover:text-purple-700 font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition duration-300">Books</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl text-center bg-gradient-to-r from-blue-200 to-purple-200 p-8 rounded-xl shadow-lg mb-8">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+            Welcome to Jordana Faye's Book Girls
+        </h1>
+        <p class="text-lg md:text-xl text-gray-700">
+            Discover stories, adventures, and more!
+        </p>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="w-full max-w-4xl bg-white p-8 md:p-12 rounded-xl shadow-lg space-y-8">
+        <!-- Featured Books Section -->
+        <section class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">Featured Books</h2>
+            <ul class="space-y-6 text-gray-700 text-base md:text-lg">
+                <li class="p-4 bg-purple-50 rounded-lg shadow-sm border border-purple-100">
+                    <strong class="text-purple-800">First Bite</strong> - Learning about a world Autumn only dreamed existed as she is thrust into the middle of a familial fight between good and evil.
+                </li>
+                <li class="p-4 bg-blue-50 rounded-lg shadow-sm border border-blue-100">
+                    <strong class="text-blue-800">Troublemaking Witch</strong> - A girl who always has to be in charge will discover there is even more to who she is than she ever thought possible.
+                </li>
+                <li class="p-4 bg-red-50 rounded-lg shadow-sm border border-red-100">
+                    <strong class="text-red-800">Crimson Pattern</strong> - In a world where serial killers are mostly male, a woman with rules and time on her hands might just become legendary... if she isn't caught first.
+                </li>
+                <li class="p-4 bg-green-50 rounded-lg shadow-sm border border-green-100">
+                    <strong class="text-green-800">Sovereign Storm</strong> - A woman with the power of mythological gods, and an unknown history. With her best friend by her side, she can't help but succeed.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="w-full max-w-4xl bg-gray-800 text-white p-8 rounded-xl shadow-lg mt-8 text-center">
+        <section id="contact">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Contact Me</h2>
+            <p class="text-gray-300 leading-relaxed text-base md:text-lg">
+                Please contact me for more:<br>
+                <a href="https://www.facebook.com/jordanafayebookgirl/" target="_blank" class="text-blue-400 hover:text-blue-300 font-semibold underline mx-2">Facebook</a> |
+                <a href="https://formspree.io/f/mldnyrvj" target="_blank" class="text-blue-400 hover:text-blue-300 font-semibold underline mx-2">Contact Form</a>
+            </p>
+        </section>
+    </footer>
 </body>
 </html>
