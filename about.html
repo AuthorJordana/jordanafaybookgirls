@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About Jordana Fay</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Jordana Faye</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for the page */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light grey background */
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center content horizontally */
+            min-height: 100vh; /* Ensure it takes full viewport height */
+            margin: 0;
+            padding: 20px; /* Add some padding around the content */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+    </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About the Author</a>
-    <a href="books.html">Books</a>
-  </nav>
-  <main>
-    <h1>About the Author</h1>
-    <p>
-      As an author, Jordana Faye finds her inspiration in the pages of countless books, fueled by a lifelong passion for reading. 
-      Her fascination with true crime often spills into her research, adding depth to her work. Off the page, she embraces life's finer details, enjoying fashion and a well-crafted cocktail alongside her literary adventures.
-    </p>
-    <!-- Add image here if you have one -->
-    <h2>Fun Facts</h2>
-    <ul>
-      <li>Most active and awake: the middle of the night</li>
-      <li>Extreme introvert</li>
-      <li>Shopping is an addiction</li>
-      <li>Fashion is life</li>
-    </ul>
-  </main>
+    <!-- Navigation Bar -->
+    <nav class="w-full max-w-4xl bg-white p-4 rounded-xl shadow-md mb-8 flex flex-wrap justify-center gap-4">
+        <a href="index.html" class="text-gray-700 hover:text-purple-700 font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition duration-300">Home</a>
+        <a href="about.html" class="text-purple-700 font-bold px-4 py-2 rounded-lg bg-purple-50 hover:bg-purple-100 transition duration-300">About the Author</a>
+        <a href="books.html" class="text-gray-700 hover:text-purple-700 font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition duration-300">Books</a>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="w-full max-w-4xl bg-white p-8 md:p-12 rounded-xl shadow-lg space-y-8">
+        <!-- About the Author Section -->
+        <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-purple-100 to-pink-100 p-6 rounded-xl shadow-md">
+            <!-- Image for Author -->
+            <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-8">
+                <!-- Replace 'https://placehold.co/200x200/a78bfa/ffffff?text=Jordana+Faye' with your actual author image URL -->
+                <img src="https://placehold.co/200x200/a78bfa/ffffff?text=Jordana+Faye" alt="Jordana Faye" class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-lg border-4 border-purple-300">
+            </div>
+            <!-- Text Content for About the Author -->
+            <div>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-purple-800 mb-4 leading-tight">
+                    About the Author
+                </h1>
+                <p class="text-gray-700 leading-relaxed text-base md:text-lg">
+                    As an author, Jordana Faye finds her inspiration in the pages of countless books, fueled by a lifelong passion for reading.
+                    Her fascination with true crime often spills into her research, adding depth to her work. Off the page, she embraces life's finer details, enjoying fashion and a well-crafted cocktail alongside her literary adventures.
+                </p>
+            </div>
+        </div>
+
+        <!-- Fun Facts Section -->
+        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Fun Facts</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-700 text-base md:text-lg">
+                <li>Most active and awake: the middle of the night</li>
+                <li>Extreme introvert</li>
+                <li>Shopping is an addiction</li>
+                <li>Fashion is life</li>
+            </ul>
+        </div>
+    </main>
 </body>
 </html>
