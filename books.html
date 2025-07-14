@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Books by Jordana Fay</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books by Jordana Faye</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for the page */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light grey background */
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center content horizontally */
+            min-height: 100vh; /* Ensure it takes full viewport height */
+            margin: 0;
+            padding: 20px; /* Add some padding around the content */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+
+        /* Custom styles for gradients and shadows */
+        .book-section-gradient-1 {
+            background: linear-gradient(to right, #fef2f2, #fee2e2); /* Light red/pink gradient */
+        }
+        .book-section-gradient-2 {
+            background: linear-gradient(to right, #eef2ff, #e0e7ff); /* Light blue/lavender gradient */
+        }
+    </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About the Author</a>
-    <a href="books.html">Books</a>
-  </nav>
-  <main>
-    <h1>Books</h1>
-    <section>
-<img src="First_Bite_Cover_JordanaFaye.png" alt="Book cover">
-      <h2>First Bite</h2>
-      <p>
-        When Autumn encounters the enigmatic and devastatingly handsome Tristan Jordan in downtown Chicago, she quickly realizes he's no ordinary man—he’s a vampire, and he knows who she is. What begins as a chance meeting spirals into an intense and magnetic connection that neither of them can ignore. Autumn soon learns she’s been under surveillance by the vampire world due to her unique bloodline, which may carry untapped magical power. As she and Tristan grow closer, their bond deepens—literally. Through Tristan’s bite, their souls become psychically linked, giving them the ability to communicate without words and feel each other's emotions. But love doesn’t come without shadows. Tristan harbors secrets of his own: a dark past, a chaotic younger brother named Jaiden with dangerous ambitions, and a vampire world divided by ideology. As Autumn moves into a new house with her best friend Jade and begins a new college semester, her life shifts from ordinary to surreal. Vampire politics, ancient bloodlines, and supernatural threats swirl around her. Soon, she’s being stalked by Jaiden, who is obsessed with making her his vampire bride—or worse. As her mystical ancestry begins to awaken, Autumn is drawn into a deeper war: between light and dark, power and purpose, legacy and love. She must learn to control her gifts, guard her heart, and survive the pull of ancient forces that seek to claim her. In the final chapters, Autumn embraces her destiny—not just as Tristan’s beloved, but as a powerful force in her own right. She faces the Hollow, confronts her shadow self, and finds the strength to forgive, love, and transform.
-      </p>
-    </section>
-    <section>
-<img src="Troublemaking Witch.png" alt="Book cover">
-      <h2>Troublemaking Witch</h2>
-      <p>
-        Troublemaking Witch follows Aiyana, a bold and rebellious young witch navigating the magical world while dealing with the pressures of her family's legacy and the chaos of high school. With a talent for stirring up trouble—and potions—Aiyana's mischief lands her in detention, magical duels, and the crosshairs of a secret council watching her every move. But when a forbidden power awakens within her and unexpected allies emerge, Aiyana must decide if she’s willing to embrace her destiny or rewrite it on her own terms. With danger looming and romance sparking, Aiyana’s journey is just the beginning of a trilogy filled with magic, mystery, and a touch of rebellion.
-      </p>
-    </section>
-    <ul>
-      <li><a href="upcoming.html">Upcoming Books</a></li>
-      <li><a href="excerpts.html">Excerpts</a></li>
-    </ul>
-  </main>
+    <!-- Navigation Bar -->
+    <nav class="w-full max-w-4xl bg-white p-4 rounded-xl shadow-md mb-8 flex flex-wrap justify-center gap-4">
+        <a href="index.html" class="text-gray-700 hover:text-purple-700 font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition duration-300">Home</a>
+        <a href="about.html" class="text-gray-700 hover:text-purple-700 font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition duration-300">About the Author</a>
+        <a href="books.html" class="text-purple-700 font-bold px-4 py-2 rounded-lg bg-purple-50 hover:bg-purple-100 transition duration-300">Books</a>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="w-full max-w-4xl bg-white p-8 md:p-12 rounded-xl shadow-lg space-y-10">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 text-center mb-8 leading-tight">
+            Books
+        </h1>
+
+        <!-- First Book Section: First Bite -->
+        <section class="flex flex-col md:flex-row items-center book-section-gradient-1 p-6 rounded-xl shadow-md space-y-6 md:space-y-0 md:space-x-8">
+            <!-- Image for First Bite -->
+            <div class="flex-shrink-0 w-48 h-auto md:w-64">
+                <!-- Replace 'https://placehold.co/200x300/fca5a5/ffffff?text=First+Bite' with the actual URL for First_Bite_Cover_JordanaFaye.png -->
+                <img src="https://placehold.co/200x300/fca5a5/ffffff?text=First+Bite" alt="First Bite Book Cover" class="w-full h-auto rounded-lg shadow-lg border-2 border-red-300">
+            </div>
+            <!-- Text Content for First Bite -->
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-red-800 mb-3">First Bite</h2>
+                <p class="text-gray-700 leading-relaxed text-base md:text-lg">
+                    When Autumn encounters the enigmatic and devastatingly handsome Tristan Jordan in downtown Chicago, she quickly realizes he's no ordinary man—he’s a vampire, and he knows who she is. What begins as a chance meeting spirals into an intense and magnetic connection that neither of them can ignore. Autumn soon learns she’s been under surveillance by the vampire world due to her unique bloodline, which may carry untapped magical power. As she and Tristan grow closer, their bond deepens—literally. Through Tristan’s bite, their souls become psychically linked, giving them the ability to communicate without words and feel each other's emotions. But love doesn’t come without shadows. Tristan harbors secrets of his own: a dark past, a chaotic younger brother named Jaiden with dangerous ambitions, and a vampire world divided by ideology. As Autumn moves into a new house with her best friend Jade and begins a new college semester, her life shifts from ordinary to surreal. Vampire politics, ancient bloodlines, and supernatural threats swirl around her. Soon, she’s being stalked by Jaiden, who is obsessed with making her his vampire bride—or worse. As her mystical ancestry begins to awaken, Autumn is drawn into a deeper war: between light and dark, power and purpose, legacy and love. She must learn to control her gifts, guard her heart, and survive the pull of ancient forces that seek to claim her. In the final chapters, Autumn embraces her destiny—not just as Tristan’s beloved, but as a powerful force in her own right. She faces the Hollow, confronts her shadow self, and finds the strength to forgive, love, and transform.
+                </p>
+            </div>
+        </section>
+
+        <!-- Second Book Section: Troublemaking Witch -->
+        <section class="flex flex-col md:flex-row items-center book-section-gradient-2 p-6 rounded-xl shadow-md space-y-6 md:space-y-0 md:space-x-8">
+            <!-- Image for Troublemaking Witch -->
+            <div class="flex-shrink-0 w-48 h-auto md:w-64">
+                <!-- Replace 'https://placehold.co/200x300/a78bfa/ffffff?text=Troublemaking+Witch' with the actual URL for Troublemaking Witch.png -->
+                <img src="https://placehold.co/200x300/a78bfa/ffffff?text=Troublemaking+Witch" alt="Troublemaking Witch Book Cover" class="w-full h-auto rounded-lg shadow-lg border-2 border-blue-300">
+            </div>
+            <!-- Text Content for Troublemaking Witch -->
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-3">Troublemaking Witch</h2>
+                <p class="text-gray-700 leading-relaxed text-base md:text-lg">
+                    Troublemaking Witch follows Aiyana, a bold and rebellious young witch navigating the magical world while dealing with the pressures of her family's legacy and the chaos of high school. With a talent for stirring up trouble—and potions—Aiyana's mischief lands her in detention, magical duels, and the crosshairs of a secret council watching her every move. But when a forbidden power awakens within her and unexpected allies emerge, Aiyana must decide if she’s willing to embrace her destiny or rewrite it on her own terms. With danger looming and romance sparking, Aiyana’s journey is just the beginning of a trilogy filled with magic, mystery, and a touch of rebellion.
+                </p>
+            </div>
+        </section>
+
+        <!-- Additional Links Section -->
+        <ul class="flex flex-wrap justify-center gap-6 mt-10">
+            <li>
+                <a href="upcoming.html" class="text-lg md:text-xl text-purple-700 hover:text-purple-900 font-semibold px-6 py-3 rounded-full bg-purple-100 hover:bg-purple-200 transition duration-300 shadow-md">Upcoming Books</a>
+            </li>
+            <li>
+                <a href="excerpts.html" class="text-lg md:text-xl text-purple-700 hover:text-purple-900 font-semibold px-6 py-3 rounded-full bg-purple-100 hover:bg-purple-200 transition duration-300 shadow-md">Excerpts</a>
+            </li>
+        </ul>
+    </main>
 </body>
 </html>
